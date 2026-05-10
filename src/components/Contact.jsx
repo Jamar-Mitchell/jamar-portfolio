@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { HiOutlineMail, HiOutlineDocumentDownload } from "react-icons/hi";
 
 const links = [
@@ -13,11 +13,6 @@ const links = [
     icon: FaGithub,
     label: "GitHub",
     href: "https://github.com/jamar-mitchell",
-  },
-  {
-    icon: FaTwitter,
-    label: "Twitter",
-    href: "https://twitter.com/",
   },
   {
     icon: HiOutlineMail,

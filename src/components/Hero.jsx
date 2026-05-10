@@ -1,5 +1,5 @@
 import { motion, useScroll, useTransform } from "framer-motion";
-import { FaLinkedinIn, FaGithub, FaTwitter } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import headshot from "../assets/headshot.jpeg";
 
 export default function Hero() {
@@ -68,14 +68,6 @@ export default function Hero() {
               aria-label="GitHub"
             >
               <FaGithub />
-            </a>
-            <a
-              href="https://twitter.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              aria-label="Twitter"
-            >
-              <FaTwitter />
             </a>
           </div>
         </motion.div>
