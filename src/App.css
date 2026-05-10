@@ -134,21 +134,26 @@
 .navbar__toggle {
   display: none;
   color: var(--text-primary);
+  z-index: 1002;
+  position: relative;
 }
 
 /* Mobile nav */
 .navbar__mobile {
   position: fixed;
-  inset: 0;
-  top: 70px;
-  background: rgba(5, 5, 5, 0.97);
-  backdrop-filter: blur(20px);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100vw;
+  height: 100vh;
+  background: #050505;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 2rem;
-  z-index: 999;
+  z-index: 1001;
 }
 .navbar__mobile a {
   font-family: var(--font-heading);
