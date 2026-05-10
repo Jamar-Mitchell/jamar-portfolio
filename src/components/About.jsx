@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 
 const stats = [
-  { value: "4+", label: "Years Experience" },
+  { value: "7+", label: "Years Experience" },
   { value: "6+", label: "Projects Delivered" },
-  { value: "98%", label: "Client Satisfaction" },
-  { value: "30+", label: "Combined Team Yrs" },
+  { value: "40%", label: "QA Cycle Reduction" },
+  { value: "3", label: "Industries" },
 ];
 
 export default function About() {

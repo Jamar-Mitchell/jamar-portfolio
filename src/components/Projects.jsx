@@ -15,7 +15,7 @@ export default function Projects() {
           transition={{ duration: 0.7 }}
         >
           <p className="section-label">Portfolio</p>
-          <h2 className="section-title">Projects I&apos;ve Shipped</h2>
+          <h2 className="section-title">Recent Projects I&apos;ve Shipped</h2>
         </motion.div>
 
         <div className="projects__grid">
@@ -67,7 +67,9 @@ export default function Projects() {
                 )}
               </div>
 
-              <div className={`project-card__image${project.imageFit === 'cover' ? ' project-card__image--cover' : ''}`}>
+              <div
+                className={`project-card__image${project.imageFit === "cover" ? " project-card__image--cover" : ""}`}
+              >
                 <img src={project.image} alt={project.title} />
               </div>
             </motion.div>

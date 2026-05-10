@@ -40,8 +40,8 @@ export default function Hero() {
           <h2 className="hero__title">Software Engineer & Founder</h2>
           <p className="hero__desc">
             Building products at Microsoft by day, scaling ventures through
-            BlackTagDevs and RendezView by night. I craft digital experiences
-            at the intersection of engineering, design, and entrepreneurship.
+            BlackTagDevs and RendezView by night. I craft digital experiences at
+            the intersection of engineering, design, and entrepreneurship.
           </p>
           <div className="hero__actions">
             <a href="#projects" className="btn btn--primary">
