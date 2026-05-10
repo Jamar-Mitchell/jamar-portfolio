@@ -4,10 +4,12 @@ import posthog from "posthog-js";
 import "./index.css";
 import App from "./App.jsx";
 
-posthog.init(import.meta.env.VITE_POSTHOG_KEY || "YOUR_POSTHOG_KEY", {
-  api_host: import.meta.env.VITE_POSTHOG_HOST || "https://us.i.posthog.com",
-  person_profiles: "identified_only",
-});
+if (import.meta.env.PROD) {
+  posthog.init(import.meta.env.VITE_POSTHOG_KEY, {
+    api_host: import.meta.env.VITE_POSTHOG_HOST || "https://us.i.posthog.com",
+    person_profiles: "identified_only",
+  });
+}
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
