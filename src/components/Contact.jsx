@@ -76,10 +76,6 @@ export default function Contact() {
 
         <footer className="footer">
           <div className="footer__line" />
-          <p>
-            &copy; {new Date().getFullYear()} Jamar Mitchell. Built with React
-            &amp; Framer Motion.
-          </p>
         </footer>
       </div>
     </section>

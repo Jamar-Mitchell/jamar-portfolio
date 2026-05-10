@@ -38,6 +38,24 @@ export default function Hero() {
           <p className="hero__greeting">Hi, I&apos;m</p>
           <h1 className="hero__name">Jamar Mitchell</h1>
           <h2 className="hero__title">Software Engineer & Founder</h2>
+          <div className="hero__title-socials">
+            <a
+              href="https://www.linkedin.com/in/jamar-mitchell-456b18b5/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn"
+            >
+              <FaLinkedinIn />
+            </a>
+            <a
+              href="https://github.com/jamar-mitchell"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="GitHub"
+            >
+              <FaGithub />
+            </a>
+          </div>
           <p className="hero__desc">
             Building products at Microsoft by day, scaling ventures through
             BlackTagDevs and RendezView by night. I craft digital experiences at
