@@ -9,6 +9,14 @@ if (import.meta.env.PROD) {
     api_host: import.meta.env.VITE_POSTHOG_HOST || "https://us.i.posthog.com",
     person_profiles: "identified_only",
   });
+
+  const params = new URLSearchParams(window.location.search);
+  if (params.get("me") === "1") {
+    posthog.identify("jamar-mitchell", {
+      name: "Jamar Mitchell",
+      role: "owner",
+    });
+  }
 }
 
 createRoot(document.getElementById("root")).render(
