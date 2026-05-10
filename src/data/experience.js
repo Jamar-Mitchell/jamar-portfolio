@@ -1,12 +1,12 @@
 const experience = [
   {
-    id: 1,
-    role: "Software Engineer",
-    company: "Microsoft",
-    period: "2022 — Present",
+    id: 3,
+    role: "Co-Founder — Frontend Engineering",
+    company: "RendezView",
+    period: "2025 — Present",
     description:
-      "Building products at scale. Contributing to frontend engineering, design systems, and developer tools across the Microsoft ecosystem.",
-    tags: ["React", "TypeScript", "Azure", "Design Systems"],
+      "Building an AI-powered event planning platform that transforms the vendor-customer experience. Leading frontend development with React Native and modern web technologies.",
+    tags: ["React Native", "AI/ML", "Startup", "Product"],
   },
   {
     id: 2,
@@ -18,13 +18,13 @@ const experience = [
     tags: ["Leadership", "Design", "Branding", "Full-Stack"],
   },
   {
-    id: 3,
-    role: "Co-Founder — Frontend Engineering",
-    company: "RendezView",
-    period: "2025 — Present",
+    id: 1,
+    role: "Software Engineer",
+    company: "Microsoft",
+    period: "2022 — Present",
     description:
-      "Building an AI-powered event planning platform that transforms the vendor-customer experience. Leading frontend development with React Native and modern web technologies.",
-    tags: ["React Native", "AI/ML", "Startup", "Product"],
+      "Building products at scale. Contributing to frontend engineering, design systems, and developer tools across the Microsoft ecosystem.",
+    tags: ["React", "TypeScript", "Azure", "Design Systems"],
   },
   {
     id: 4,

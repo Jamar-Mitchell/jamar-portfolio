@@ -30,10 +30,17 @@ export default function Projects() {
             >
               <div className="project-card__body">
                 <div className="project-card__header">
-                  <h3 className="project-card__title">{project.title}</h3>
-                  <span className="project-card__category">
-                    {project.category}
-                  </span>
+                  <div
+                    className={`project-card__avatar${project.imageFit === "cover" ? " project-card__avatar--cover" : ""}${project.avatarFill ? " project-card__avatar--fill" : ""}${project.avatarZoom ? " project-card__avatar--zoom" : ""}`}
+                  >
+                    <img src={project.image} alt={project.title} />
+                  </div>
+                  <div>
+                    <h3 className="project-card__title">{project.title}</h3>
+                    <span className="project-card__category">
+                      {project.category}
+                    </span>
+                  </div>
                 </div>
 
                 <p className="project-card__desc">{project.description}</p>

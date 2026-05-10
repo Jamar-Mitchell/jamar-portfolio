@@ -7,6 +7,18 @@ import rvLogo from "../assets/rendezview-text-logo.svg";
 
 const projects = [
   {
+    id: 6,
+    title: "RendezView",
+    description:
+      "AI-powered event planning platform designed to improve vendor conversion rates through intelligent recommendations.",
+    category: "AI Platform",
+    tags: ["AI/ML", "Event Planning", "Recommendations"],
+    metrics: ["40% User Interest", "$100K+ Potential", "25% Conversion Boost"],
+    image: rvLogo,
+    avatarFill: true,
+    link: "https://rendezview.app",
+  },
+  {
     id: 1,
     title: "Holm",
     description:
@@ -39,6 +51,7 @@ const projects = [
     tags: ["E-Commerce", "Marketplace", "HBCU", "Community"],
     metrics: ["HBCU Entrepreneurs", "Digital Marketplace", "Cultural Commerce"],
     image: hbcuImg,
+    avatarZoom: true,
     link: "https://www.hbcumade.app/",
   },
   {
@@ -62,17 +75,6 @@ const projects = [
     metrics: ["10K+ Search Impressions", "4+ Sales Channels", "35% Retention"],
     image: dbImg,
     link: "https://drunkenbeegame.com/",
-  },
-  {
-    id: 6,
-    title: "RendezView",
-    description:
-      "AI-powered event planning platform designed to improve vendor conversion rates through intelligent recommendations.",
-    category: "AI Platform",
-    tags: ["AI/ML", "Event Planning", "Recommendations"],
-    metrics: ["40% User Interest", "$100K+ Potential", "25% Conversion Boost"],
-    image: rvLogo,
-    link: "https://rendezview.app",
   },
 ];
 

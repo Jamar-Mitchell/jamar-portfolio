@@ -56,6 +56,7 @@ function MobileExperienceCard({ item }) {
       animate={inView ? { opacity: 1, y: 0 } : {}}
       transition={{ duration: 0.5 }}
     >
+      <div className="exp-mobile__dot" />
       <span className="timeline__period">{item.period}</span>
       <h3 className="timeline__role">{item.role}</h3>
       <h4 className="timeline__company">{item.company}</h4>
