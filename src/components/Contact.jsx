@@ -60,7 +60,7 @@ export default function Contact() {
           </div>
 
           <motion.a
-            href="/Jamar Mitchell Resume.pdf"
+            href="/Jamar_Mitchell_2026.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn--primary contact__resume"

@@ -52,9 +52,9 @@ function MobileExperienceCard({ item }) {
     <motion.div
       ref={ref}
       className="exp-mobile__card"
-      initial={{ opacity: 0, y: 30 }}
+      initial={{ opacity: 0, y: 20 }}
       animate={inView ? { opacity: 1, y: 0 } : {}}
-      transition={{ duration: 0.5 }}
+      transition={{ duration: 0.6, ease: "easeOut" }}
     >
       <div className="exp-mobile__dot" />
       <span className="timeline__period">{item.period}</span>

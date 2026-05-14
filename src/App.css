@@ -689,7 +689,7 @@
   border-radius: 16px;
   padding: 1.75rem;
   text-align: left;
-  transition: all var(--transition-base);
+  transition: border-color var(--transition-base), box-shadow var(--transition-base);
 }
 
 .exp-mobile__dot {
