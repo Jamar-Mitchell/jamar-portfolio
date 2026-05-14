@@ -473,6 +473,23 @@
   }
 }
 
+/* Tablet: hero layout adjustments for 769px–1200px */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .hero__bg-image {
+    width: 45%;
+  }
+  .hero__content {
+    margin-right: clamp(2rem, 6vw, 6rem);
+    max-width: 450px;
+  }
+  .hero__name {
+    font-size: clamp(2.2rem, 4.5vw, 3.2rem);
+  }
+  .hero__desc {
+    font-size: 0.95rem;
+  }
+}
+
 /* ============================================
    ABOUT
    ============================================ */
