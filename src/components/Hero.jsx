@@ -1,12 +1,14 @@
 import { motion, useScroll, useTransform } from "framer-motion";
+import { useState } from "react";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
-import headshot from "../assets/headshot.jpeg";
+import headshot from "../assets/headshot.webp";
 
 export default function Hero() {
   const { scrollY } = useScroll();
   const y1 = useTransform(scrollY, [0, 600], [0, -120]);
   const y2 = useTransform(scrollY, [0, 600], [0, -60]);
   const opacity = useTransform(scrollY, [0, 400], [1, 0]);
+  const [imageLoaded, setImageLoaded] = useState(false);
 
   return (
     <section id="home" className="hero">
@@ -15,10 +17,16 @@ export default function Hero() {
         className="hero__bg-image"
         style={{ y: y2 }}
         initial={{ opacity: 0, scale: 1.05 }}
-        animate={{ opacity: 1, scale: 1 }}
+        animate={imageLoaded ? { opacity: 1, scale: 1 } : { opacity: 0, scale: 1.05 }}
         transition={{ duration: 1.4, ease: [0.16, 1, 0.3, 1] }}
       >
-        <img src={headshot} alt="" aria-hidden="true" />
+        {!imageLoaded && <div className="hero__skeleton" />}
+        <img
+          src={headshot}
+          alt=""
+          aria-hidden="true"
+          onLoad={() => setImageLoaded(true)}
+        />
       </motion.div>
 
       {/* Smoke / mist overlays */}

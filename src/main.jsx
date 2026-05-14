@@ -8,6 +8,11 @@ if (import.meta.env.PROD) {
   posthog.init(import.meta.env.VITE_POSTHOG_KEY, {
     api_host: import.meta.env.VITE_POSTHOG_HOST || "https://us.i.posthog.com",
     person_profiles: "identified_only",
+    capture_performance: true,
+    session_recording: {
+      maskAllInputs: false,
+      maskTextSelector: null,
+    },
   });
 
   const params = new URLSearchParams(window.location.search);

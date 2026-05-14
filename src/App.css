@@ -208,6 +208,25 @@
   filter: brightness(0.75) contrast(1.05) saturate(0.75);
 }
 
+/* Loading skeleton shimmer */
+.hero__skeleton {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    110deg,
+    var(--bg-primary) 25%,
+    rgba(255, 255, 255, 0.04) 37%,
+    var(--bg-primary) 50%
+  );
+  background-size: 200% 100%;
+  animation: skeleton-shimmer 1.5s ease-in-out infinite;
+}
+
+@keyframes skeleton-shimmer {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
 /* Gradient overlay — soft right-edge blend */
 .hero__overlay {
   position: absolute;
@@ -1179,4 +1198,24 @@
 .footer p {
   font-size: 0.85rem;
   color: var(--text-muted);
+}
+
+/* ============================================
+   REDUCED MOTION
+   ============================================ */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+  .hero__smoke {
+    display: none;
+  }
+  .hero__skeleton {
+    animation: none;
+  }
 }
